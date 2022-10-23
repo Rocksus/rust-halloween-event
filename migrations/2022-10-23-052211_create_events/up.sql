@@ -1,0 +1,8 @@
+CREATE TABLE events (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    description TEXT NOT NULL,
+    event_date TIMESTAMP NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
